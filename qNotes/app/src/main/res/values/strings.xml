@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">qNotes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="programName">qNotes</string>
+    <string name="calendarButton">CALENDAR</string>
+    <string name="to_do_listButton">TO-DO LIST</string>
+    <string name="expensesButton">EXPENSES</string>
+    <string name="dialogTodoName">Todo Name</string>
+    <string name="dialogIsChecked">Already done</string>
+    <string name="new_todo_item">New Todo Item</string>
+    <string name="new_expenses_item">New Income/Expense Item</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="amount">Amount:</string>
+    <string name="expense">Expense</string>
+    <string name="total_amount">Total Amount:</string>
+    <string name="cTitle">Title</string>
+    <string name="cLocation">Location</string>
+    <string name="cSave">Save</string>
+    <string name="cDescription">Description</string>
+    <string name="cEvent_start">Event start</string>
+    <string name="cEvent_end">Event end</string>
+    <string name="cMainText">Please enter your calendar event infos</string>
+    <string name="cAdd_start_date">Add start date</string>
+    <string name="cAdd_end_date">Add end date</string>
+    <string name="adding_new_item">Adding new item</string>
+    <string name="deleting_multiple_items">Deleting multiple items</string>
+    <string name="delete_all_items">Delete all items</string>
+    <string name="adding_new_expense_income">Adding new expense/income</string>
+</resources>

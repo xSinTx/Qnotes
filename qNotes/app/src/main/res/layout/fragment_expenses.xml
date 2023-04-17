@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".expenses.ExpensesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+        <TextView
+            android:id="@+id/tvAmountNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvTotalAmount"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            tools:text="1234" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="161dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="36dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_marginStart="16dp"
+                android:id="@+id/btnIncome"
+                android:text="@string/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="16dp"
+                android:id="@+id/rvIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_expenses_list" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_marginStart="16dp"
+                android:id="@+id/btnExpenses"
+                android:text="@string/expenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="16dp"
+                android:id="@+id/rvExpenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_expenses_list" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:fab_addButtonSize="mini"
+        app:fab_addButtonColorNormal="?attr/colorSecondary"
+        app:fab_addButtonColorPressed="?attr/colorOnSecondary"
+        android:layout_margin="10dp" >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:src="@drawable/ic_add_white_36dp"
+            app:fab_colorNormal="?attr/colorPrimary"
+            app:fab_colorPressed="?attr/colorSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabDelete"
+            android:src="@drawable/ic_delete_grey600_48dp"
+            app:fab_colorNormal="?attr/colorPrimary"
+            app:fab_colorPressed="?attr/colorSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</FrameLayout>

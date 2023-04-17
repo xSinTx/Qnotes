@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Theme.QNotes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/red_900</item>
+        <item name="colorOnPrimary">@color/green_500</item>
+
+        <item name="colorPrimaryVariant">@color/green_900</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+
+        <item name="colorSecondary">@color/red_990</item>
+        <item name="colorOnSecondary">@color/red_950</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_night</item>
+    </style>
+
+</resources>

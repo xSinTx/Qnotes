@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="programName">qNotes</string>
+    <string name="calendarButton">CALENDAR</string>
+    <string name="to_do_listButton">TO-DO LIST</string>
+    <string name="expensesButton">EXPENSES</string>
+</resources>

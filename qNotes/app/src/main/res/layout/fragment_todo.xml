@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".todo.TodoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_todo_list" />
+
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:fab_addButtonSize="mini"
+        app:fab_addButtonColorNormal="?attr/colorSecondary"
+        app:fab_addButtonColorPressed="?attr/colorOnSecondary"
+        android:layout_margin="10dp" >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:src="@drawable/ic_add_white_36dp"
+            app:fab_colorNormal="?attr/colorPrimary"
+            app:fab_colorPressed="?attr/colorSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabDel"
+            android:src="@drawable/ic_delete_grey600_48dp"
+            app:fab_colorNormal="?attr/colorPrimary"
+            app:fab_colorPressed="?attr/colorSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</FrameLayout>
